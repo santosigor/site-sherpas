@@ -3,28 +3,15 @@ $(document).ready(function() {
   
 });
 
-$('.carousel-nossos-cursos').slick({
-  centerMode: true,
-  //centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
+$('#carousel-nossos-cursos').owlCarousel({
+  center: true,
+  nav: true,
+  dots: false,
+  items:2,
+  loop:true,
+  responsive:{
+    600:{
+      items:3
     }
-  ]
+  }
 });

@@ -48,7 +48,23 @@ section {
 		}
 	}
 	&#sct1 {
-
+		.owl-carousel.owl-drag {
+			margin-top:25px;
+			.owl-item {
+				padding:20px;
+				.sp-cursos {
+					background: $dark-blue;
+					color:$white;
+					padding:60px;
+				}
+				&.active.center {
+					padding: 0;
+					.sp-cursos {
+						padding:80px 20px;
+					}
+				}
+			}
+		}
 	}
 	&#sct2 {
 		background: #eeeeee;

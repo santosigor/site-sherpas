@@ -1,10 +1,23 @@
 @font-face {
-  font-family: 'Noto Sans';
-  src: url('../font/NotoSans.eot');
-  src: url('../font/NotoSans.eot?#iefix') format('embedded-opentype'),
-      url('../font/NotoSans.woff2') format('woff2'),
-      url('../font/NotoSans.woff') format('woff'),
-      url('../font/NotoSans.ttf') format('truetype');
+  font-family: 'gotham-book';
+  src: url('../font/Gotham-Book.woff2') format('woff2'),
+       url('../font/Gotham-Book.woff')  format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham-bold';
+  src: url('../font/Gotham-Bold.woff2') format('woff2'),
+       url('../font/Gotham-Bold.woff')  format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham-black';
+  src: url('../font/Gotham-Black.woff2') format('woff2'),
+       url('../font/Gotham-Black.woff')  format('woff');
   font-weight: normal;
   font-style: normal;
 }

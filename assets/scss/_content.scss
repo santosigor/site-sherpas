@@ -1,10 +1,10 @@
 body {
 	color: $dark-gray;
+	font-family: 'gotham-book';
 }
 
 b, strong {
-	// font-weight: normal;
-	// font-family: 'Noto Sans Bold';
+	font-family: 'gotham-bold';
 }
 
 .sp-container {
@@ -20,12 +20,14 @@ section {
 	background: $white;
 	.sp-title {
 		text-align:center;
-		font-size:32px;
+		font-size:28px;
 		position:relative;
-		margin-bottom:32px;
+		margin-bottom:25px;
+		font-family: 'gotham-black';
 		span {
 			font-size:14px;
 			color: $dark-blue;
+			font-family: 'gotham-bold';
 		}
 		&:before, &:after {
 			content:'';

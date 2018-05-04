@@ -48,10 +48,13 @@ section {
 		}
 	}
 	&#sct1 {
-		.owl-carousel.owl-drag {
+		.owl-carousel {
 			margin-top:25px;
 			.owl-item {
 				padding:20px;
+				transition: all 400s;
+			  -webkit-transition: all 400ms;
+			  -moz-transition: all 400ms;
 				.sp-cursos {
 					background: $dark-blue;
 					color:$white;

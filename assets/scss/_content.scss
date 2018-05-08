@@ -161,7 +161,47 @@ section {
 		}
 	}
 	&#sct4 {
-		
+		.post {
+			margin:25px 0;
+			a {
+				display:block;
+				text-decoration:none;
+				color: $dark-gray;
+				> img {
+					border-radius:4px;
+				}
+				p {
+					margin-bottom:10px;
+					span.autor {
+						background: $yellow;
+						padding: 0px 3px;
+						display:inline-block;
+						font-size:11px;
+						margin-top: 25px;
+						border-radius:4px;
+					}
+				}
+				span.data {
+					color:$blue;
+					display:inline-block;
+					font-size:14px;
+					text-align: center;
+					font-family: 'gotham-bold';
+					img {
+						width:20px;
+						margin-right:8px;
+					}
+				}
+				&:hover {
+					p {
+						text-decoration:underline;
+					}
+				}
+			}
+		}
+		.bt {
+			margin-top: 25px;
+		}
 	}
 	&#sct5 {
 		background: #4a6a91;

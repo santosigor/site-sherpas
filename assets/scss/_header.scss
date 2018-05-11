@@ -16,15 +16,43 @@ header {
 	  	min-width:200px;
 	  }
 	}
+	&.header {
+		text-align: center;
+		padding:112px 0;
+		background-color:$dark-gray;
+		font-family: 'gotham-bold';
+		&.hd-quem-somos {
+		  background-image: url('../../images/bg-quem-somos.jpg');
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+		&.hd-cursos {
+		  background-image: url('../../images/bg-cursos.jpg');
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+		&.hd-coaching {
+		  background-image: url('../../images/bg-coaching.jpg');
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+		&.hd-blog {
+		  background-image: url('../../images/bg-blog.jpg');
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+		&.hd-contato {
+		  background-image: url('../../images/bg-contato.jpg');
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+	}
 }
-
-.header {
-	text-align: center;
-	padding:80px 0;
-	background:$dark-gray;
-	font-family: 'gotham-black';
-}
-
 
 // responsive
 

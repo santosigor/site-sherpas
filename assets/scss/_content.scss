@@ -165,6 +165,38 @@ section {
 				background: url('../../images/title-after-dp.png') no-repeat center center;
 			}
 		}
+		#carousel-depoimentos {
+			margin-top:25px;
+			.depoimento {
+				padding: 60px 20px 20px 60px;
+			  background-image: url('../../images/icon_quote.png');
+			  background-position: 20px 20px;
+			  background-repeat: no-repeat;
+			  background-color:rgba(255,255,255,0.1);
+				p {
+					font-style: italic;
+					color: $yellow;
+				}
+				ul {
+					margin:0;
+	    		padding-left: 28px;
+					list-style: none;
+					li {
+						position: relative;
+						&:before {
+					    content: '';
+					    position: absolute;
+					    display: block;
+					    width: 12px;
+					    height: 3px;
+					    background-color: $white;
+					    margin-top: 10px;
+					    margin-left: -27px;
+						}
+					}
+				}
+			}
+		}
 	}
 	&#sct4 {
 		.post {

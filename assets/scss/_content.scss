@@ -3,7 +3,7 @@ body {
 	font-family: 'gotham-book';
 }
 
-h2, h3, b, strong {
+h2, h3, h4, h5, b, strong {
 	font-family: 'gotham-bold';
 }
 
@@ -25,39 +25,13 @@ ul {
 
 .sp-content {
 	padding: 80px 0;
+	@media (max-width: 992px) {
+		padding: 80px 40px;
+	}
 }
 
 section {
 	background: $white;
-	.sp-title {
-		text-align:center;
-		font-size:28px;
-		position:relative;
-		margin-bottom:25px;
-		font-family: 'gotham-black';
-		span {
-			font-size:14px;
-			color: $blue;
-			font-family: 'gotham-bold';
-		}
-		&:before, &:after {
-			content:'';
-			width: 50px;
-			height: 5px;
-			position: absolute;
-			top: 69%;
-		}
-		&:before {
-			left:50%;
-			margin-left:-25%;
-			background: url('../../images/title-before.png') no-repeat center center;
-		}
-		&:after {
-			right:50%;
-			margin-right:-25%;
-			background: url('../../images/title-after.png') no-repeat center center;
-		}
-	}
 	&#sct1 {
 		.owl-carousel {
 			margin-top:25px;
@@ -163,11 +137,16 @@ section {
 	  background-repeat: no-repeat;
 	  background-size: cover;
 	  .sp-title {
-			&:before {
-				background: url('../../images/title-before-dp.png') no-repeat center center;
-			}
-			&:after {
-				background: url('../../images/title-after-dp.png') no-repeat center center;
+			h1 {
+				span {
+					color: $white;
+				}
+				&:before {
+					background: url('../../images/title-before-dp.png') no-repeat center center;
+				}
+				&:after {
+					background: url('../../images/title-after-dp.png') no-repeat center center;
+				}
 			}
 		}
 		#carousel-depoimentos {
@@ -208,8 +187,8 @@ section {
 				.owl-dot {
 					outline:none;
 					span {
-				    width: 20px;
-				    height: 20px;
+				    width: 15px;
+				    height: 15px;
 				    margin: 20px 7px 0 7px;
 				    border-radius: 0;
 	    			background: #999999;
@@ -282,6 +261,51 @@ section {
 				margin:0;
 		    padding: 18px 25px;
 				border-radius:0 50px 50px 0;
+			}
+		}
+	}
+}
+
+#pg-que-somos {
+	.bg-nos-torna-diferente {
+	  background-image: url('../../images/bg-nos-torna-diferente.jpg');
+	  background-repeat: repeat-x;
+	  background-position: center 80px;
+	  .sp-content {
+	  	padding:40px 0;
+	  }
+	  .diferente {
+	  	padding: 80px 45px;
+	  	background: $blue;
+	  	text-align: center;
+	  	img {
+	  		margin-bottom: 15px;
+	  	}
+	  	span {
+	  		font-size: 14px;
+	  		color: #d5d5d5;
+	  		&.font-gotham-bold {
+	  			margin-bottom:5px;
+	  			color:$white;
+	  		}
+	  	}
+	  }
+	}
+	.equipe {
+		margin-top:25px;
+		position: relative;
+		img {
+			border-radius: 4px;
+		}
+		.nome {
+			position: absolute;
+			left:0;
+			bottom:20px;
+			background: $white;
+			border-radius:0 4px 4px 0;
+			padding: 15px 20px;
+			span {
+				font-size:14px;
 			}
 		}
 	}
@@ -378,6 +402,51 @@ section {
 	}
 	.bt {
 		margin-top: 25px;
+	}
+}
+
+#pg-contato {
+	.box-contato {
+		border:20px solid $dark-gray;
+		margin-bottom:60px;
+		.icon-ct {
+			display:inline-block;
+			width:76px;
+			height: 76px;
+			border-radius:100%;
+			background: $blue;
+			position: relative;
+			top: -48px;
+		}
+		p {
+			position: relative;
+			top: -24px;
+		}
+	}
+	h1 {
+		font-size:28px;
+		margin-bottom:15px;
+		font-family: 'gotham-black';
+		display: inline-block;
+		span {
+			font-size:14px;
+			color: $blue;
+			font-family: 'gotham-bold';
+		}
+	}
+	p {
+		font-size: 14px;
+	}
+	form {
+		.form-control {
+			background: #f5f5f5;
+			&:focus {
+		    box-shadow: none;
+			}
+		}
+		textarea {
+			resize: none;
+		}
 	}
 }
 

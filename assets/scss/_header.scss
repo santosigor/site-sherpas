@@ -18,7 +18,7 @@ header {
 	}
 	&.header {
 		text-align: center;
-		padding:112px 0;
+		min-height:280px;
 		background-color:$dark-gray;
 		font-family: 'gotham-bold';
 		&.hd-quem-somos {
@@ -50,6 +50,26 @@ header {
 		  background-position: center center;
 		  background-repeat: no-repeat;
 		  background-size: cover;
+		}
+		&.hd-pg-curso {
+		  background-image: url('../../images/bg-pg-curso.jpg');
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+		> div {
+			width:100%;
+		}
+		@media (max-width: 1024px) {
+			h1 {
+				font-size:34px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			h1 {
+				font-size:28px;
+			}
 		}
 	}
 }

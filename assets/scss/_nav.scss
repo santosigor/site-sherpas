@@ -55,13 +55,11 @@ nav {
 							top: 50%;
 						}
 						&:before {
-							left:50%;
-							margin-left:-40%;
+							left:10px;
 							background: url('../../images/nav-active-before.png') no-repeat center center;
 						}
 						&:after {
-							right:50%;
-							margin-right:-40%;
+							right:10px;
 							background: url('../../images/nav-active-after.png') no-repeat center center;
 						}
 					}
